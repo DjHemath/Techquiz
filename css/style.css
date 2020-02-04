@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 10% 80%;
+}
+
+nav
+{
+	width: 100%;
+	background-color: #6c5ce7;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	color: #fff;
+	align-items: center;
+}
+
+.logout
+{
+	cursor: pointer;
+}
+
+main
+{
+	display: grid;
+	grid-template-rows: 20% 80%;
+}
+
+.firstRow
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.firstRow #questionNumber
+{
+	border: 1px solid #ccc;
+	padding: 10px 20px;
+}
+
+.firstRow #questionNumber #currentQuestion
+{
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.firstRow #timer
+{
+	background-color: #6c5ce7;
+	padding: 10px 20px;
+	color: #fff;
+}
+
+
+#questions
+{
+	
+}
+
+#questions .question
+{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 30% 50% 20%;
+	padding: 10px;
+}
+
+#questions .question-text
+{
+	background-color: #ffeaa7;
+	padding: 10px;
+}
+
+#questions .options
+{
+	padding: 40px;
+}
+
+#questions .options ul
+{
+	list-style-type: none;
+}
+
+#questions .options ul li
+{
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+}
+
+#questions .options ul li span
+{
+	margin-left: 10px;
+}
+
+#questions .btnContainer
+{
+	display: flex;
+	justify-content: flex-end;
+	padding: 30px
+}
+
+#questions .btnContainer button
+{
+	all: unset;
+	background-color: #6c5ce7;
+	padding: 12px 20px;
+	color: #fff;
+	cursor: pointer;
+}
+
+#questions .question
+{
+	display: none;
+}
+
+
+#questions .question.active
+{
+	display: grid;
+}
